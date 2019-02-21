@@ -17,6 +17,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    UIViewController *sv =  self.window.rootViewController;
+    if ( [sv isKindOfClass:[UISplitViewController class]]) {
+        ((UISplitViewController *)sv).preferredDisplayMode = UISplitViewControllerDisplayModeAllVisible;
+    }
+    
+//    if let svc = self.window?.rootViewController as? UISplitViewController {
+//        svc.preferredDisplayMode = .allVisible
+//    }
+    
     return YES;
 }
 

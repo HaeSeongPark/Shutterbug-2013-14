@@ -13,6 +13,11 @@
 		97D508DA221E411800BD436A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97D508D9221E411800BD436A /* Assets.xcassets */; };
 		97D508DD221E411800BD436A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97D508DB221E411800BD436A /* LaunchScreen.storyboard */; };
 		97D508E0221E411900BD436A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D508DF221E411900BD436A /* main.m */; };
+		97D508E8221E423000BD436A /* FlickPhotosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D508E7221E423000BD436A /* FlickPhotosTVC.m */; };
+		97D508EB221E42F900BD436A /* JustPhotosedFlickPhotosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D508EA221E42F900BD436A /* JustPhotosedFlickPhotosTVC.m */; };
+		97D508F0221E440800BD436A /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D508EF221E440800BD436A /* FlickrFetcher.m */; };
+		97D508F4221E484200BD436A /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D508F2221E484100BD436A /* ImageViewController.m */; };
+		97D508F6221E504800BD436A /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97D508F5221E504800BD436A /* Main_iPad.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,16 @@
 		97D508DC221E411800BD436A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97D508DE221E411800BD436A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97D508DF221E411900BD436A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		97D508E6221E423000BD436A /* FlickPhotosTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlickPhotosTVC.h; sourceTree = "<group>"; };
+		97D508E7221E423000BD436A /* FlickPhotosTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlickPhotosTVC.m; sourceTree = "<group>"; };
+		97D508E9221E42F900BD436A /* JustPhotosedFlickPhotosTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JustPhotosedFlickPhotosTVC.h; sourceTree = "<group>"; };
+		97D508EA221E42F900BD436A /* JustPhotosedFlickPhotosTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JustPhotosedFlickPhotosTVC.m; sourceTree = "<group>"; };
+		97D508ED221E440800BD436A /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
+		97D508EE221E440800BD436A /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
+		97D508EF221E440800BD436A /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
+		97D508F2221E484100BD436A /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		97D508F3221E484200BD436A /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		97D508F5221E504800BD436A /* Main_iPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main_iPad.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +73,35 @@
 		97D508CF221E411800BD436A /* Shutterbug */ = {
 			isa = PBXGroup;
 			children = (
+				97D508E9221E42F900BD436A /* JustPhotosedFlickPhotosTVC.h */,
+				97D508EA221E42F900BD436A /* JustPhotosedFlickPhotosTVC.m */,
+				97D508E6221E423000BD436A /* FlickPhotosTVC.h */,
+				97D508E7221E423000BD436A /* FlickPhotosTVC.m */,
+				97D508F3221E484200BD436A /* ImageViewController.h */,
+				97D508F2221E484100BD436A /* ImageViewController.m */,
+				97D508EC221E440800BD436A /* Flickr Fetcher */,
 				97D508D0221E411800BD436A /* AppDelegate.h */,
 				97D508D1221E411800BD436A /* AppDelegate.m */,
 				97D508D3221E411800BD436A /* ViewController.h */,
 				97D508D4221E411800BD436A /* ViewController.m */,
 				97D508D6221E411800BD436A /* Main.storyboard */,
+				97D508F5221E504800BD436A /* Main_iPad.storyboard */,
 				97D508D9221E411800BD436A /* Assets.xcassets */,
 				97D508DB221E411800BD436A /* LaunchScreen.storyboard */,
 				97D508DE221E411800BD436A /* Info.plist */,
 				97D508DF221E411900BD436A /* main.m */,
 			);
 			path = Shutterbug;
+			sourceTree = "<group>";
+		};
+		97D508EC221E440800BD436A /* Flickr Fetcher */ = {
+			isa = PBXGroup;
+			children = (
+				97D508ED221E440800BD436A /* FlickrAPIKey.h */,
+				97D508EE221E440800BD436A /* FlickrFetcher.h */,
+				97D508EF221E440800BD436A /* FlickrFetcher.m */,
+			);
+			path = "Flickr Fetcher";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97D508DD221E411800BD436A /* LaunchScreen.storyboard in Resources */,
+				97D508F6221E504800BD436A /* Main_iPad.storyboard in Resources */,
 				97D508DA221E411800BD436A /* Assets.xcassets in Resources */,
 				97D508D8221E411800BD436A /* Main.storyboard in Resources */,
 			);
@@ -143,7 +177,11 @@
 			files = (
 				97D508D5221E411800BD436A /* ViewController.m in Sources */,
 				97D508E0221E411900BD436A /* main.m in Sources */,
+				97D508E8221E423000BD436A /* FlickPhotosTVC.m in Sources */,
 				97D508D2221E411800BD436A /* AppDelegate.m in Sources */,
+				97D508F0221E440800BD436A /* FlickrFetcher.m in Sources */,
+				97D508F4221E484200BD436A /* ImageViewController.m in Sources */,
+				97D508EB221E42F900BD436A /* JustPhotosedFlickPhotosTVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
